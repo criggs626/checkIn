@@ -1,0 +1,13 @@
+.main{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: all .75s ease;
+}
+.menu{
+  text-align: center;
+  margin-bottom: 20px;
+}
+.modal{
+  position:relative !important;
+}

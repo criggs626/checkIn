@@ -1,0 +1,26 @@
+front page: User
+  Select Event
+    Checkin
+      Find name
+      Search
+    New visitor
+      Find parent or new parent
+        Kids info
+    Logout
+
+front page admin:
+  Create Event:
+    form
+  Check attendance:
+    Dashboard stuff?
+    Select Event
+      List of names & Info
+      Prize button
+  Logout
+
+
+/checkin (Check in the kid id and event id) {kid,event}
+/addKid (Add the kid and check them in) {lots of data}
+
+//Additional
+Default date with the birthday

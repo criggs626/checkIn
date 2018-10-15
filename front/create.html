@@ -1,0 +1,30 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+  <div class="container main">
+    <div class="row">
+      <h2>Create Event</h2>
+      <div class="col-md-12 menu">
+        <form name="login" action="/createEvent" method="post" accept-charset="utf-8">
+          <input type="text" name="name" placeholder="Event Name" required>
+          <input type="text" name="date" class="datepicker" placeholder="Event Date">
+          <button class="btn-large">Create Event<i class="material-icons right">send</i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.datepicker').datepicker();
+    });
+  </script>
+</body>
+</html>
