@@ -1,0 +1,25 @@
+<html>
+<body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+  <script>
+  function print(kid){
+    var doc = new jsPDF({
+      orientation: 'landscape',
+      unit: 'in',
+      format: [1.4, 3.5]
+    });
+    doc.setFontSize(20);
+    doc.text(.5, .5, kid.fname+kid.lname);
+    doc.setFontSize(15)
+    doc.text(.5, 1, "Checkout Number: ");
+    var string = doc.output('datauristring');
+    var iframe = "<iframe width='100%' height='100%' src='" + string + "'></iframe>"
+    var x = window.open();
+    x.document.open();
+    x.document.write(iframe);
+    x.document.close();
+  }
+  </script>
+</body>
+</html>
